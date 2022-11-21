@@ -1,0 +1,13 @@
+CustomerID,CompanyName,FirstName,LastName,BillingAddress,City,StateOfProvince,ZIPCode,Email,CompanyWebsite,PhoneNumber,FaxNumber,ShipAddress,ShipCity,ShipStateOrProvince,ShipZIPCode,ShipPhoneNumber
+1,PT Bangun Bersama,Thomi,Alghani,Jakarta,Jakarta,Jakarta,11111,thomi.algh@gmail.com,bangunberasama.com,09121312,09123121,Jakarta,Jakarta,Jakarta,111111,0912132
+2,PT Pantang Mundur,Kaka,Slank,Depok,Depok,Jawa Barat,16434,kaka.slank@gmail.com,pantangmundur.com,0912312,0912312,Depok,Depok,Jawa Barat,16434,09121312
+3,PT Bangun Bersama,Alpha,Beta,Jakarta,Jakarta,Jakarta,11111,thomi.algh@gmail.com,bangunberasama.com,09121312,09123121,Jakarta,Jakarta,Jakarta,111111,0912132
+4,PT Pantang Mundur,Carli,Gama,Depok,Depok,Jawa Barat,16434,kaka.slank@gmail.com,pantangmundur.com,0912312,0912312,Depok,Depok,Jawa Barat,16434,09121312
+5,PT Bangun Bersama,Fanta,Global,Jakarta,Jakarta,Jakarta,11111,thomi.algh@gmail.com,bangunberasama.com,09121312,09123121,Jakarta,Jakarta,Jakarta,111111,0912132
+6,PT Pantang Mundur,Haji,Ikan,Depok,Depok,Jawa Barat,16434,kaka.slank@gmail.com,pantangmundur.com,0912312,0912312,Depok,Depok,Jawa Barat,16434,09121312
+7,PT Bangun Bersama,Jamal,Keren,Jakarta,Jakarta,Jakarta,11111,thomi.algh@gmail.com,bangunberasama.com,09121312,09123121,Jakarta,Jakarta,Jakarta,111111,0912132
+8,PT Pantang Mundur,Lulu,Maharani,Depok,Depok,Jawa Barat,16434,kaka.slank@gmail.com,pantangmundur.com,0912312,0912312,Depok,Depok,Jawa Barat,16434,09121312
+9,PT Bangun Bersama,Nana,Orlando,Jakarta,Jakarta,Jakarta,11111,thomi.algh@gmail.com,bangunberasama.com,09121312,09123121,Jakarta,Jakarta,Jakarta,111111,0912132
+10,PT Pantang Mundur,Putra,Quraish,Depok,Depok,Jawa Barat,16434,kaka.slank@gmail.com,pantangmundur.com,0912312,0912312,Depok,Depok,Jawa Barat,16434,09121312
+11,PT Bangun Bersama,Reza,Sulaiman,Jakarta,Jakarta,Jakarta,11111,thomi.algh@gmail.com,bangunberasama.com,09121312,09123121,Jakarta,Jakarta,Jakarta,111111,0912132
+12,PT Pantang Mundur,Thoriq,Ubud,Depok,Depok,Jawa Barat,16434,kaka.slank@gmail.com,pantangmundur.com,0912312,0912312,Depok,Depok,Jawa Barat,16434,09121312
