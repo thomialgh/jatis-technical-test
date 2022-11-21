@@ -1,8 +1,10 @@
 # jatis-technical-test
 
-Dependecies:
+Dependencies:
 * Mysql 
 * Go
+
+use DDL in `script/sql/ddl.sql` to create Database and Table if not exists yet
 
 change the configuration in `config/config.yml`
 
