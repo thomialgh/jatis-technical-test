@@ -1,6 +1,7 @@
 package main
 
 import (
+	"jatis/pkg/config"
 	"jatis/pkg/repo"
 	"log"
 
@@ -9,11 +10,14 @@ import (
 )
 
 func main() {
+
+	config.ReadConfig()
+
 	repo.Init(repo.Option{
-		Username: "Jatis",
-		Password: "123456",
-		Host:     "localhost",
-		Port:     "3306",
+		Username: config.Cfg.Mysql.Username,
+		Password: config.Cfg.Mysql.Password,
+		Host:     config.Cfg.Mysql.Host,
+		Port:     config.Cfg.Mysql.Port,
 	})
 
 	cmd := cobra.Command{

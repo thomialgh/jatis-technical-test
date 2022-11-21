@@ -1,6 +1,7 @@
 package main
 
 import (
+	"jatis/pkg/config"
 	"jatis/pkg/router"
 	"net/http"
 	"time"
@@ -18,7 +19,7 @@ func runAPI(opt option) {
 
 	server := http.Server{
 		Handler:      e,
-		Addr:         opt.Addr,
+		Addr:         config.Cfg.Server.Addr,
 		ReadTimeout:  10 * time.Second,
 		WriteTimeout: 10 * time.Second,
 	}
