@@ -84,9 +84,13 @@ func GetOrderDetails(orderID int64) (*entity.OrdersResponse, error) {
 		return nil, err
 	}
 
-	mProduct, err := domain.GetProductsMap(repo.DB, productIds)
-	if err != nil {
-		return nil, err
+	var mProduct map[int64]entity.Products = nil
+
+	if len(productIds) != 0 {
+		mProduct, err = domain.GetProductsMap(repo.DB, productIds)
+		if err != nil {
+			return nil, err
+		}
 	}
 
 	for _, v := range detailOrder {
@@ -99,11 +103,13 @@ func GetOrderDetails(orderID int64) (*entity.OrdersResponse, error) {
 			Discount:      v.Discount,
 		}
 
-		od.Products = entity.ProductResponse{
-			ProductID:   mProduct[v.ProductID].ProductID,
-			ProductName: mProduct[v.ProductID].ProductName,
-			UnitPrice:   mProduct[v.ProductID].UnitPrice,
-			InStock:     mProduct[v.ProductID].InStock,
+		if mProduct != nil {
+			od.Products = entity.ProductResponse{
+				ProductID:   mProduct[v.ProductID].ProductID,
+				ProductName: mProduct[v.ProductID].ProductName,
+				UnitPrice:   mProduct[v.ProductID].UnitPrice,
+				InStock:     mProduct[v.ProductID].InStock,
+			}
 		}
 
 		res.OrderDetails = append(res.OrderDetails, od)
